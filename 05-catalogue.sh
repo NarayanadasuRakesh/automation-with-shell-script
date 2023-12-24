@@ -65,8 +65,6 @@ unzip -o /tmp/catalogue.zip &>> "$LOGFILE"
 npm install &>> "$LOGFILE"
 VALIDATE $? "INSTALLING DEPENDENCIES"
 
-
-
 # Copying catalogue service file
 cp "$PWD_PATH"/catalogue.service /etc/systemd/system/catalogue.service &>> "$LOGFILE"
 VALIDATE $? "COPYING CATALOGUE SERVICE FILE"
