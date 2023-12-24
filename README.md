@@ -1,5 +1,5 @@
-# robotshop-shell-scripts
-Configutation of robotshop microservices project using shell script
+# automation-with-shell-script
+Configutation of microservices using shell script
 
 1) DATABASE SERVERS SETUP<br/>mondodb - redis - mysql - rabbitmq
 
