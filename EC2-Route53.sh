@@ -1,4 +1,15 @@
 #!/bin/bash
+#
+# Script Name: EC2-Route53.sh
+# Author: Narayanadasu Rakesh
+# Version: 1.0
+# Date: December 20, 2023
+#
+# Description: This script does create ec2 instance and maps domain name to Route53 A records.
+#
+# Usage: ./EC2-Route53.sh
+#
+#START#
 GC="\e[32m"
 NC="\e[0m"
 
@@ -40,6 +51,6 @@ do
         }]
     }
         '
-
 done
 
+#END#
