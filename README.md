@@ -1,5 +1,5 @@
 # automation-with-shell-script
-Install and Configutation of microservices using shell script
+Installation and Configutation of microservices using shell script
 
 1) DATABASE SERVERS SETUP<br/>mondodb - redis - mysql - rabbitmq
 
