@@ -30,7 +30,7 @@ do
     
     #Create EC2 Instance and Print Private IP Address
     IP_ADDR=$(aws ec2 run-instances --image-id $IMAGE_ID --instance-type $INSTANCE_TYPE --security-group-ids $SG --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value="$i"}]" --query 'Instances[0].[PrivateIpAddress]' --output text)
-    echo "$GC $i: $IP_ADDR $NC"
+    echo -e "$GC $i: $IP_ADDR $NC"
 
     #Create Route53 A Records
     aws route53 change-resource-record-sets \

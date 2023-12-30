@@ -82,8 +82,8 @@ read -p "Enter mongodb host: " MONGODB_HOST
 read -p "Enter redis host: " REDIS_HOST
 if [ -f "$SERVICE_FILE" ]; then
   # Replace IP
-  sed -i "s/<MONGODB-SERVER-IPADDRESS>/${MONGODB_HOST}/g" "$SERVICE_FILE" &>> "$LOGFILE"
-  sed -i "s/<REDIS-SERVER-IP>/${REDIS_HOST}/g" "$SERVICE_FILE" &>> "$LOGFILE"
+  sed -i "s/<MONGODB-SERVER-IP-ADDRESS>/${MONGODB_HOST}/g" "$SERVICE_FILE" &>> "$LOGFILE"
+  sed -i "s/<REDIS-SERVER-IP-ADDRESS>/${REDIS_HOST}/g" "$SERVICE_FILE" &>> "$LOGFILE"
   echo "Replacement successful."
 else
   echo "Error: File not found - $SERVICE_FILE"
